@@ -4,7 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mehradvrnture - خدمات و قیمت‌ها</title>
-    <link href="style.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Vazir';
+            src: url('https://cdn.fontiran.com/vazir/vazir.woff2') format('woff2');
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Vazir', Arial, sans-serif;
+            background: linear-gradient(180deg, #e3f2fd, #f0f8ff);
+            color: #333;
+            direction: rtl;
+            text-align: right;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        header img {
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .pricing h2 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .pricing p {
+            text-align: center;
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: none;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pricing-table th {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+        }
+
+        .pricing-table tr:nth-child(even) {
+            background: #f7faff;
+        }
+
+        .pricing-table tr:nth-child(odd) {
+            background: #ffffff;
+        }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            width: max-content;
+        }
+
+        .contact-button:hover {
+            background: linear-gradient(90deg, #0056b3, #003f7f);
+        }
+
+        .contact-button img {
+            height: 20px;
+            width: 20px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +144,7 @@
 
     <section class="pricing">
         <h2>خدمات و قیمت‌ها</h2>
+        <p>mehradvrnture با ارائه خدمات حرفه‌ای و با کیفیت، تجربه‌ای بی‌نظیر برای مشتریان خود فراهم می‌کند. هدف ما جلب رضایت شماست و تمام تلاش خود را برای ارائه بهترین خدمات به کار می‌گیریم.</p>
         <table class="pricing-table">
             <thead>
                 <tr>
@@ -25,22 +156,22 @@
             <tbody>
                 <tr>
                     <td>خدمت ۱</td>
-                    <td>فیلترشکن یکماهه</td>
-                    <td>120,000 تومان</td>
+                    <td>توضیحات خدمت ۱</td>
+                    <td>100,000 تومان</td>
                 </tr>
                 <tr>
                     <td>خدمت ۲</td>
-                    <td>کانفیگ سرور شخصی</td>
-                    <td>300,000 تومان</td>
+                    <td>توضیحات خدمت ۲</td>
+                    <td>200,000 تومان</td>
                 </tr>
                 <tr>
                     <td>خدمت ۳</td>
-                    <td>راهندازی سرور شخصی رایگان</td>
-                    <td>180,000 تومان</td>
+                    <td>توضیحات خدمت ۳</td>
+                    <td>300,000 تومان</td>
                 </tr>
             </tbody>
         </table>
-        <a href="https://t.me/Kanieloutisse" class="contact-button">
+        <a href="https://t.me/yourtelegram" class="contact-button">
             <img src="telegram-icon.png" alt="تلگرام" />
             ارتباط با ما در تلگرام
         </a>
