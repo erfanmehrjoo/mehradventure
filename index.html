@@ -1,205 +1,119 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mehradvrnture - خدمات و قیمت‌ها</title>
-    <style>
-        @font-face {
-            font-family: 'Vazir';
-            src: url('https://cdn.fontiran.com/vazir/vazir.woff2') format('woff2');
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Vazir', Arial, sans-serif;
-            background: linear-gradient(180deg, #e3f2fd, #f0f8ff);
-            color: #333;
-            direction: rtl;
-            text-align: right;
-        }
-
-        header {
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: #fff;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-
-        header img {
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .pricing {
-            position: relative;
-            top: -30px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .pricing h2 {
-            text-align: center;
-            color: #007bff;
-        }
-
-        .pricing p {
-            text-align: center;
-            color: #555;
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        .pricing-table {
-            width: 100%;
-            border-collapse: collapse;
-            border: none;
-        }
-
-        .pricing-table th, .pricing-table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .pricing-table th {
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: #fff;
-        }
-
-        .pricing-table tr:nth-child(even) {
-            background: #f7faff;
-        }
-
-        .pricing-table tr:nth-child(odd) {
-            background: #ffffff;
-        }
-
-        .contact-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1em;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-            width: max-content;
-        }
-
-        .contact-button:hover {
-            background: linear-gradient(90deg, #0056b3, #003f7f);
-        }
-
-        .contact-button img {
-            height: 20px;
-            width: 20px;
-        }
-
-        .additional-info {
-        margin: 60px auto 40px;
-        padding: 25px;
-        background: #eaf4ff;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-        text-align: center;
-        max-width: 800px;
-        color: #333;
-        line-height: 1.8;
-        font-size: 1.1em;
-}
-
-
-        footer {
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            border-radius: 15px 15px 0 0;
-            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <title>MehrAdventure - فروش وی‌پی‌ان</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
 </head>
 <body>
+    <!-- هدر -->
     <header>
-        <img src="logo.png" alt="لوگوی برند" />
-        <h1>mehradvrnture</h1>
+        <div class="container">
+            <h1 class="logo">MehrAdventure</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">درباره من</a></li>
+                    <li><a href="#products">محصولات</a></li>
+                    <li><a href="#testimonials">نظرات مشتریان</a></li>
+                    <li><a href="#contact">تماس با من</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="pricing">
-        <h2>خدمات و قیمت‌ها</h2>
-        <p  style="text-align: right;">📣 mehradvrnture با ارائه خدمات حرفه‌ای و با کیفیت، تجربه‌ای بی‌نظیر برای مشتریان خود فراهم می‌کند. هدف ما جلب رضایت شماست و تمام تلاش خود را برای ارائه بهترین خدمات به کار می‌گیریم.</p>
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>خدمت</th>
-                    <th>توضیحات</th>
-                    <th>قیمت</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>خدمت ۱</td>
-                    <td>توضیحات خدمت ۱</td>
-                    <td>100,000 تومان</td>
-                </tr>
-                <tr>
-                    <td>خدمت ۲</td>
-                    <td>توضیحات خدمت ۲</td>
-                    <td>200,000 تومان</td>
-                </tr>
-                <tr>
-                    <td>خدمت ۳</td>
-                    <td>توضیحات خدمت ۳</td>
-                    <td>300,000 تومان</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="https://t.me/yourtelegram" class="contact-button">
-            <img src="telegram-icon.png" alt="تلگرام" />
-            ارتباط با ما در تلگرام
-        </a>
-            <p style="position: relative;   top: -2px; text-align: right;">mehradvrnture با دو سال تجربه‌ی درخشان، سرعت و پایداری را به شما ارائه می‌دهد. تیم ما به ارائه‌ی بهترین خدمات متعهد است و از شما می‌خواهیم که در روند پاسخ‌گویی صبور باشید تا بهترین تجربه را داشته باشید.</p>
+    <!-- بخش معرفی -->
+    <section id="about">
+        <div class="container">
+            <h2>درباره من</h2>
+            <div class="about-content">
+                <img src="assets/mehradventure.jpg" alt="عکس من" class="about-img">
+                <p>
+                    mehradventure جایی است که کیفیت و اعتماد، حرف اول را می‌زند. ما با بیش از دو سال تجربه در ارائه خدمات VPN، تمام تلاش خود را کرده‌ایم تا باکیفیت‌ترین و پایدارترین اتصالات را برای کاربران در داخل ایران فراهم کنیم.
+                    
+                    هدف ما فراتر از یک فعالیت تجاری است؛ ما به اینترنت آزاد و بدون محدودیت اعتقاد داریم و مأموریت خود را در این مسیر دنبال می‌کنیم. در mehradventure، اولویت ما همیشه کاربرانمان هستند. به همین دلیل، تمامی سرویس‌های ما با دقت طراحی و آزمایش شده‌اند تا بهترین تجربه ممکن را به شما ارائه دهند.
+                    
+                    اگر به دنبال یک اتصال امن، سریع و قابل‌اعتماد هستید، mehradventure همان جایی است که باید به آن اعتماد کنید. ما اینجاییم تا اینترنت را ساده‌تر و در دسترس‌تر کنیم.
+                    
+                    </p>
+            </div>
+        </div>
     </section>
 
+    <!-- بخش محصولات -->
+    <section id="products">
+        <div class="container">
+            <h2>محصولات</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="assets/monthly.jpg" width="250px" height="250px" alt="وی‌پی‌ان یک ماهه">
+                    <h3>وی‌پی‌ان یک ماهه</h3>
+                    <p class="price">120,000 تومان</p>
+                    <a href="https://t.me/Kanieloutisse" class="btn">خرید از طریق تلگرام</a>
+                </div>
+                <div class="product">
+                    <img src="assets/bronze.jpg" width="250px" height="250px" alt="وی‌پی‌ان سه ماهه">
+                    <h3>وی‌پی‌ان سه ماهه</h3>
+                    <p class="price">340,000 تومان</p>
+                    <a href="https://t.me/Kanieloutisse" class="btn">خرید از طریق تلگرام</a>
+                </div>
+                <div class="product">
+                    <img src="assets/silver.jpg" height="250px" width="250px" alt="وی‌پی‌ان شش ماهه">
+                    <h3>وی‌پی‌ان شش ماهه</h3>
+                    <p class="price">700,000 تومان</p>
+                    <a href="https://t.me/Kanieloutisse" class="btn">خرید از طریق تلگرام</a>
+                </div>
+                <div class="product">
+                    <img src="assets/gold.jpg" width="250px" height="250px" alt="وی‌پی‌ان یک ساله">
+                    <h3>وی‌پی‌ان یک ساله</h3>
+                    <p class="price">1050,000 تومان</p>
+                    <a href="https://t.me/Kanieloutisse" class="btn">خرید از طریق تلگرام</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- بخش نظرات مشتریان -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>نظرات مشتریان</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="assets/man.png"  alt="آواتار کاربر" class="avatar">
+                    <p>"وی‌پی‌ان‌های ارائه شده واقعاً عالی هستند! سرعت بالا و پشتیبانی ۲۴ ساعته واقعاً قابل تقدیره."</p>
+                    <span>- علی</span>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/weoman.png"  alt="آواتار کاربر" class="avatar">
+                    <p>"بهترین سرویس وی‌پی‌ان که تا حالا استفاده کردم. قیمت‌ها هم بسیار منصفانه‌ست."</p>
+                    <span>- مریم</span>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/man2.png" alt="آواتار کاربر" class="avatar">
+                    <p>"از پشتیبانی عالی و سرعت بالای وی‌پی‌ان‌ها واقعاً راضیم. توصیه می‌کنم."</p>
+                    <span>- رضا</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- بخش تماس -->
+    <section id="contact">
+        <div class="container">
+            <h2>تماس با من</h2>
+            <div class="contact-box">
+                <p>برای خرید یا اطلاعات بیشتر به تلگرام من پیام بدید:</p>
+                <a href="https://t.me/Kanieloutisse" class="btn">ارتباط از طریق تلگرام</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
     <footer>
-        <p>تمام حقوق محفوظ است - mehradvrnture © 2024</p>
+        <div class="container">
+            <p class="footer-text">© 2025 MehrAdventure. تمام حقوق محفوظ است.</p>
+        </div>
     </footer>
 </body>
 </html>
