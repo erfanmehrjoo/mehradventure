@@ -199,3 +199,92 @@ footer {
     font-size: 1rem;
     text-align: center;
 }
+
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* تغییر جهت به عمودی */
+        text-align: center; /* متن در وسط قرار بگیرد */
+    }
+
+    .about-img {
+        margin-bottom: 20px; /* فاصله بین عکس و متن */
+    }
+}
+
+/* استایل‌های پایه */
+header {
+
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* دکمه همبرگری */
+.hamburger {
+    display: none; /* در دستگاه‌های بزرگ نمایش داده نمی‌شود */
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* استایل‌ها برای دستگاه‌های کوچک */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* نمایش دکمه همبرگری */
+    }
+
+    .nav-menu {
+        display: none; /* مخفی کردن منوی اصلی */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: block; /* نمایش منو وقتی فعال است */
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

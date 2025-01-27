@@ -12,7 +12,14 @@
     <header>
         <div class="container">
             <h1 class="logo">MehrAdventure</h1>
-            <nav>
+            <!-- دکمه همبرگری -->
+            <button class="hamburger" aria-label="منو">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- منوی اصلی -->
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="#about">درباره من</a></li>
                     <li><a href="#products">محصولات</a></li>
@@ -115,5 +122,16 @@
             <p class="footer-text">© 2025 MehrAdventure. تمام حقوق محفوظ است.</p>
         </div>
     </footer>
+
+    <script>
+        // انتخاب دکمه همبرگری و منو
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+    
+        // اضافه کردن رویداد کلیک به دکمه همبرگری
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active'); // باز و بسته کردن منو
+        });
+    </script>
 </body>
 </html>
